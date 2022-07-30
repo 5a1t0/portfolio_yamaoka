@@ -274,11 +274,7 @@
     justify-content: center;
 }
 
-/* -- アニメーション ------------------------------------------------------------------------- */
-.fade-inTrigger{
-    opacity: 0;
-    visibility: hidden;
-}
+/* -- アニメーション ------------------------------------------------------------------------- *
 .fade-in{
     animation-name: fade-in;
     animation-duration: 1.5s;
