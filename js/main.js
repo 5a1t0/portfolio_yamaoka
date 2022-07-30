@@ -4,7 +4,7 @@ function animation(){
         const scroll = $(window).scrollTop();
         const windowHeight = $(window).height();
 
-        if(scroll > position - windowHeight + 60){
+        if(scroll > position - windowHeight -30){
             $(this).addClass('fade-in');
         }else{
             $(this).removeClass('fade-in');
