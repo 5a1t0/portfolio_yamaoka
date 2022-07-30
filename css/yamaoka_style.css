@@ -275,6 +275,10 @@
 }
 
 /* -- アニメーション ------------------------------------------------------------------------- */
+.fade-inTrigger{
+    opacity: 0;
+    visibility: hidden;
+}
 .fade-in{
     animation-name: fade-in;
     animation-duration: 1.5s;
