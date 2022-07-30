@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+.page{
+    background-color: rgba(167, 167, 167, 1);
+    font-family: 'Cardo',serif;
+    color: #FFFFFF;
+    min-height: 100%;
+    font-size: 85%;
+    font-weight: lighter;
+}
+
+/* -- ヘッダー -------------------------------------------------------------------------- */
+.MainMenu{
+    background-image: url(../image/header_background.JPG);
+    background-position: 0% 66%; 
+    background-size: cover;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.frontApp .centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.frontApp .MainMenu{
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 0;
+    background-repeat: no-repeat;
+    height: 180px;
+}
+.Logo{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: 0.81em;
+    font-family: Syncopate, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.MainMenu a{
+    color: #FFFFFF;
+    font-size: 11.7px;
+    text-decoration: none;
+}
+
+.MainMenuLinks{
+    display: flex;
+    justify-content: center;
+}
+.linkwrapper{
+    margin: 0 8.3px;
+    font-weight: bold;
+}
+
+.linkwrapper a{
+    font-size: 15px;
+}
+.linkwrapper :hover{
+    color: rgb(160, 160, 160);
+}
+
+.div{
+    display: block;
+}
+
+/*@media screen and (max-width: 999px)
+.frontApp .MainMenuID .Logo{
+    max-width: 90%;
+    margin: 0;
+}*/
+.navwrapper .right_icon .contact_icon{
+    width: 100%;
+    text-align: right;
+    align-items: flex-end;
+    padding-right: 5%;
+}
+.navwrapper .contact_icon a{
+    color: #FFFFFF;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.navwrapper .contact_icon a :hover{
+    color: rgb(160, 160, 160);
+}
+
+
+/* -- ボディ ------------------------------------------------------------------------------ */
+/* ABOUT---------------------------------- */
+.section{
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* コンテンツを横並び */
+.frontApp .page .twocolumns{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frontApp .page .title{
+    margin-bottom: 0.9em;
+    font-weight: bold;
+}
+
+/* モバイルでは縦並び */
+@media screen and (max-width:480px){
+.frontApp .page .twocolumns{
+    display: block;
+}
+.frontApp .page .twocolumns .right :first-child, 
+.frontApp .page .twocolumns .left :first-child{
+    margin-bottom: 1.5em;
+}
+.frontApp .page .twocolumns .right, 
+.frontApp .page .twocolumns .left{
+    width: 100%!important;
+}
+}
+
+/* singleimage 設定 */
+.singleimage img{
+    height: auto;
+    max-width: 100%;
+}
+
+/* profile 設定 */
+.section .longtext{
+    margin-bottom: 0em;
+    font-family: "Didact Gothic",sans-serif;
+}
+
+/*@media screen and (min-width:480px){
+.page .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+}*/
+
+.frontApp .page .left{
+    width: 50%;
+}
+
+.page .pbElements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.longtext{
+    text-align: center;
+}
+/* PORTFOLIO------------------------------------------*/
+.frontApp .page figure{
+    position: relative;
+    cursor: pointer;
+}
+.frontApp .page .Item{
+    aspect-ratio: 16/9;
+    margin-bottom: 20px;
+}
+.frontApp .page .Item iframe{
+    width: 100%;
+    height: 100%;
+    max-width: none;
+}
+
+.frontApp .page .portfolio .section .grid{
+    display: grid;
+    grid-template: 
+        "link1 link2" 1fr
+        "link3 link4" 1fr
+        /1fr 1fr;
+}
+
+@media screen and (max-width:600px){
+.frontApp .page .portfolio .section .grid{
+    display: block;
+}
+}
+    
+.link1{
+    grid-area: link1;
+}
+.link2{
+    grid-area: link2;
+}
+.link3{
+    grid-area: link3;
+}
+
+/* MORE-----------------------------------------------*/
+.more .morepage .morelink{
+    text-align: center;
+}
+.more .morepage .morelink a{
+    color: #FFFFFF;
+}
+.more .morepage .morelink :hover{
+    color: rgb(27, 27, 27);
+}
+
+/* MESSAGE--------------------------------------------*/
+
+
+/* IMG------------------------------------------------*/
+.frontApp .page .image .section .grid{
+    display: grid;
+    grid-template: 
+        "img1 img2" auto
+        /1fr 1fr;
+}
+@media screen and (max-width:600px){
+.frontApp .page .image .section .grid{
+    display: block;
+}
+}
+
+/* CONTACT---------------------------------------------*/
+.contact_message{
+    color: #FFFFFF;
+    margin: 20px;
+}
+.contact .contact_icon{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.contact .contact_icon a{
+    color: #FFFFFF;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.contact .contact_icon a :hover{
+    color: rgb(27, 27, 27);
+}
+
+/* -- フッター ------------------------------------------------------------------------------ */
+.fotter{
+    background-image: url(../image/fotter_background.JPG);
+    background-position: 0% 66%; 
+    background-size: cover;
+    line-height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.fotter .license a{
+    font-size: 10px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+/* -- アニメーション ------------------------------------------------------------------------- */
+.fade-in{
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/* ページ全体に関わるcssの設定 */
+body{
+    font-family: 'Noto Sans JP',sans-serif;
+    /* Note Sans JPのレギュラーウエイトを設定 */
+    font-weight: 400;
+}
+
+/* 主な太字タグの太字ウエイト設定 */
+h1,h2,h3,h4,h5,h6,th,strong{
+    font-weight: 700;
+}
+
+/* 親要素の幅に合わせて画像を伸縮させるスタイル */
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* 標準的なリンクのテキスト色 */
+a{
+    color: #f30;
+}
+
+/* レスポンシブデザイン */
+html *, ::before, ::after{
+    box-sizing: border-box;
+}
+
+/* 標準的なフォントの種類とフォントサイズ */
+html{
+    font-size: 14px;
+}
+@media (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+}
+
+h1{
+    display: block;
+}
