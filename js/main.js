@@ -4,10 +4,9 @@ function animation(){
         const scroll = $(window).scrollTop();
         const windowHeight = $(window).height();
 
-        if(scroll > position - windowHeight + 80){
+        if(scroll > position - windowHeight + 60){
             $(this).addClass('fade-in');
-        }else{
-            $(this).removeClass('fade-in');
+            $(this).removeClass('fade-inTrigger');
         }
     });
 }
