@@ -6,7 +6,8 @@ function animation(){
 
         if(scroll > position - windowHeight + 60){
             $(this).addClass('fade-in');
-            $(this).removeClass('fade-inTrigger');
+        }else{
+            $(this).addClass('fade-in');
         }
     });
 }
