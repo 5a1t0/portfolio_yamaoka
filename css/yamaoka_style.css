@@ -208,6 +208,9 @@
 .link3{
     grid-area: link3;
 }
+.link4{
+    grid-area: link4;
+}
 
 /* MORE-----------------------------------------------*/
 .more .morepage .morelink{
